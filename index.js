@@ -20,7 +20,7 @@ function deepestChild() {
   var deeperNode = initialNode.querySelector('div');
   while(deeperNode) {
     initialNode = deeperNode;
-    deeperNode = initialNode.children('div');
+    deeperNode = initialNode.querySelector('div');
   }
   return initialNode;
 }
