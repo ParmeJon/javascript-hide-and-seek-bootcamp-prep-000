@@ -1,6 +1,6 @@
 function getFirstSelector(selector) {
   const firstSelection = document.getElementById('app').querySelector('selector');
-  return firstSeleciton;
+  return firstSelection;
 }
 
 function nestedTarget() {
