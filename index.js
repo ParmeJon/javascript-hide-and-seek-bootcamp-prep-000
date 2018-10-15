@@ -17,8 +17,8 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   var startingNode = document.querySelector('div#grand-node');
-  for (let i = 0; isNaN(startingNode) ; i++){
-    startingNode = startingNode[i];
+  while( isNaN(startingNode) ) {
+    startingNode = startingNode[0];
   }
   return startingNode;
 }
