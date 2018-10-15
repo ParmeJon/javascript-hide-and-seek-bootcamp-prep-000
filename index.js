@@ -16,10 +16,11 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  var startingNode = document.querySelector('#grand-node');
-  var deeperNode = startingNode[0];
-  while( isNaN(startingNode) ) {
-    startingNode = startingNode[0];
+  var initialNode = document.querySelector('#grand-node');
+  var deeperNode = initialNode[0];
+  while(deeperNode) {
+    initialNode = deeperNode;
+    deeperNode = initialNode[0];
   }
-  return startingNode;
+  return initialNode;
 }
