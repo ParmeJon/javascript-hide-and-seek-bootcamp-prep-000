@@ -13,3 +13,5 @@ function increaseRankBy(n) {
    rankedLists[i].innerHTML += n;
   }
 }
+
+function
