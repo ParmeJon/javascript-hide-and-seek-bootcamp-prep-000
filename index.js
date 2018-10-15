@@ -19,7 +19,6 @@ function deepestChild() {
   var startingNode = document.querySelector('div#grand-node');
   for (let i = 0; startingNodeisNaN ; i++){
     startingNode = startingNode[i].innerHTML;
-    
   }
-  
+  return startingNode;
 }
